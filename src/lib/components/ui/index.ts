@@ -1,0 +1,1 @@
+export { default as bgGrad } from './BgGrad.svelte';
