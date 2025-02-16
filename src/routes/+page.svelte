@@ -1,7 +1,20 @@
 <script lang="ts">
-    import BgGrad from '$lib/components/ui/BgGrad.svelte'; 
+    import Hero from '$lib/components/Hero.svelte';
+import BgGrad from '$lib/components/ui/BgGrad.svelte'; 
   </script>
   
-  <main>
-    <BgGrad /> 
+  <main class="bg-black">
+    <!-- <BgGrad />  -->
+
+    <!-- Hero section -->
+    <Hero/>
+
+    <!-- About -->
+     
+
+    <!-- Timeline -->
+
+    <!-- Projects -->
+
+    <!-- Contact -->
   </main>
