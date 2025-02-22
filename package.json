@@ -41,6 +41,7 @@
 		"@sveltejs/kit": "^2.16.0",
 		"@sveltejs/package": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
+		"@types/three": "^0.173.0",
 		"autoprefixer": "^10.4.20",
 		"eslint": "^9.18.0",
 		"eslint-config-prettier": "^10.0.1",
@@ -59,9 +60,14 @@
 		"vitest": "^3.0.0"
 	},
 	"dependencies": {
+		"@tabler/icons-svelte": "^3.30.0",
 		"clsx": "^2.1.1",
+		"svelte-cubed": "^0.2.1",
+		"svelte-icons": "^2.1.0",
 		"svelte-inview": "^4.0.4",
 		"svelte-motion": "^0.12.2",
-		"tailwind-merge": "^3.0.1"
+		"tabler": "1.0.0-alpha.8",
+		"tailwind-merge": "^3.0.1",
+		"three": "^0.173.0"
 	}
 }

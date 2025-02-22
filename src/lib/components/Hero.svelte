@@ -4,9 +4,9 @@
 	
 </script>
 
-<section class="bg-transparent pb-28 pt-20 lg:pb-0">
+<section class="bg-transparent pb-28 pt-20 lg:pb-0 px-6 md:px-12 lg:px-24 xl:px-36">
 	<div
-		class="hero-container mx-auto flex flex-col items-center px-6 md:px-12 lg:flex-row lg:px-24 xl:px-36"
+		class="hero-container mx-auto flex flex-col items-center  lg:flex-row "
 	>
 		<!-- Text Content -->
 		<div class="container mx-auto px-4 pb-12 text-center md:px-6 md:pt-20 lg:pt-32 lg:text-right">

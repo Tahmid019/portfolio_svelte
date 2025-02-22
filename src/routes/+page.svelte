@@ -1,20 +1,49 @@
 <script lang="ts">
-    import Hero from '$lib/components/Hero.svelte';
-import BgGrad from '$lib/components/ui/BgGrad.svelte'; 
-  </script>
-  
-  <main class="bg-black">
-    <!-- <BgGrad />  -->
+	import About from '$lib/components/About.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import Hero from '$lib/components/Hero.svelte';
+	import Por from '$lib/components/Por.svelte';
+	import Projects from '$lib/components/Projects.svelte';
 
-    <!-- Hero section -->
-    <Hero/>
+	import Timeline from '$lib/components/Timeline.svelte';
+	import Tools from '$lib/components/Tools.svelte';
 
-    <!-- About -->
-     
+	import BgGrad from '$lib/components/ui/BgGrad.svelte';
+	
 
-    <!-- Timeline -->
 
-    <!-- Projects -->
 
-    <!-- Contact -->
-  </main>
+	
+</script>
+
+<main class="bg-transparent">
+	<!-- <BgGrad />  -->
+
+	<!-- Hero section -->
+	<Hero />
+
+	<!-- About -->
+	<About />
+
+	<!-- Projects -->
+	<Projects />
+
+	<!-- Experience -->
+	
+	
+	<!-- Position of Responsibility -->
+	<Por />
+
+	
+
+	<!-- Coding journey -->
+
+
+	<!-- Tech Stack -->
+	 <Tools />
+
+
+	<!-- Contact -->
+</main>
+
+<Footer />
