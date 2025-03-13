@@ -1,66 +1,63 @@
 <script lang="ts">
 	import BentoGrid from './ui/BentoGrid.svelte';
-	import BentoSkeleton from './ui/BentoSkeleton.svelte';
 	import BentoGridItem from './ui/BentoGridItem.svelte';
 
-	// Icons, you can use any icon library you like
-	import IconArrowWaveRightUp from '$lib/assets/test.svg';
-	import IconBoxAlignRightFilled from '$lib/assets/test.svg';
-	import IconBoxAlignTopLeft from '$lib/assets/test.svg';
-	import IconClipboardCopy from '$lib/assets/test.svg';
-	import IconFileBroken from '$lib/assets/test.svg';
-	import IconSignature from '$lib/assets/test.svg';
-	import IconTableColumn from '$lib/assets/test.svg';
-
-	import tt from '$lib/assets/tt.jpeg';
+	
 	import WhiteShineText from './ui/WhiteShineText.svelte';
+	
+	import items from '$lib/data/projects.js';
 
-	const items = [
-		{
-			title: 'The Dawn of Innovation',
-			description: 'Explore the birth of groundbreaking ideas and inventions.',
-			header: BentoSkeleton,
-			headerImage: tt,
-			icon: IconClipboardCopy
-		},
-		{
-			title: 'The Digital Revolution',
-			description: 'Dive into the transformative power of technology.',
-			header: BentoSkeleton,
-			icon: IconFileBroken
-		},
-		{
-			title: 'The Art of Design',
-			description: 'Discover the beauty of thoughtful and functional design.',
-			header: BentoSkeleton,
-			icon: IconSignature
-		},
-		{
-			title: 'The Power of Communication',
-			description: 'Understand the impact of effective communication in our lives.',
-			header: BentoSkeleton,
-			icon: IconTableColumn
-		},
-		{
-			title: 'The Pursuit of Knowledge',
-			description: 'Join the quest for understanding and enlightenment.',
-			header: BentoSkeleton,
-			icon: IconArrowWaveRightUp
-		},
-		{
-			title: 'The Joy of Creation',
-			description: 'Experience the thrill of bringing ideas to life.',
-			header: BentoSkeleton,
-			icon: IconBoxAlignTopLeft
-		},
-		{
-			title: 'The Spirit of Adventure',
-			description: 'Embark on exciting journeys and thrilling discoveries.',
-			header: BentoSkeleton,
-			icon: IconBoxAlignRightFilled
-		}
-	];
-	//    icon class="h-4 w-4 text-neutral-500"
+	// const items = [
+	// 	{
+	// 		title: 'The Dawn of Innovation',
+	// 		description: 'Explore the birth of groundbreaking ideas and inventions.',
+	// 		header: BentoSkeleton,
+	// 		headerImage: tt,
+	// 		icon: IconClipboardCopy
+	// 	},
+	// 	{
+	// 		title: 'The Digital Revolution',
+	// 		description: 'Dive into the transformative power of technology.',
+	// 		header: BentoSkeleton,
+	// 		icon: IconFileBroken
+	// 	},
+	// 	{
+	// 		title: 'The Art of Design',
+	// 		description: 'Discover the beauty of thoughtful and functional design.',
+	// 		header: BentoSkeleton,
+	// 		icon: IconSignature
+	// 	},
+	// 	{
+	// 		title: 'The Power of Communication',
+	// 		description: 'Understand the impact of effective communication in our lives.',
+	// 		header: BentoSkeleton,
+	// 		icon: IconTableColumn
+	// 	},
+	// 	{
+	// 		title: 'The Pursuit of Knowledge',
+	// 		description: 'Join the quest for understanding and enlightenment.',
+	// 		header: BentoSkeleton,
+	// 		icon: IconArrowWaveRightUp
+	// 	},
+	// 	{
+	// 		title: 'The Joy of Creation',
+	// 		description: 'Experience the thrill of bringing ideas to life.',
+	// 		header: BentoSkeleton,
+	// 		icon: IconBoxAlignTopLeft
+	// 	},
+	// 	{
+	// 		title: 'The Spirit of Adventure',
+	// 		description: 'Embark on exciting journeys and thrilling discoveries.',
+	// 		header: BentoSkeleton,
+	// 		icon: IconBoxAlignRightFilled
+	// 	},
+	// 	{
+	// 		title: 'The Spidqwwwwwwwwwwwwrit of Adventure',
+	// 		description: 'Embark on exciting journeys and thrilling discoveries.',
+	// 		header: BentoSkeleton,
+	// 		icon: IconBoxAlignRightFilled
+	// 	}
+	// ];
 </script>
 
 <div class="title-cont px-28">

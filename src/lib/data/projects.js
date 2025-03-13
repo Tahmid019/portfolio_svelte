@@ -1,3 +1,15 @@
+import BentoSkeleton from '$lib/components/ui/BentoSkeleton.svelte';
+
+import IconArrowWaveRightUp from '$lib/assets/test.svg';
+import IconBoxAlignRightFilled from '$lib/assets/test.svg';
+import IconBoxAlignTopLeft from '$lib/assets/test.svg';
+import IconClipboardCopy from '$lib/assets/test.svg';
+import IconFileBroken from '$lib/assets/test.svg';
+import IconSignature from '$lib/assets/test.svg';
+import IconTableColumn from '$lib/assets/test.svg';
+
+import tt from '$lib/assets/tt.jpeg';
+
 const items = [
     {
         title: 'The Dawn of Innovation',
@@ -46,4 +58,4 @@ const items = [
 
 
 
-export let items;
+export default items;

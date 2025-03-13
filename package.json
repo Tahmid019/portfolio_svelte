@@ -62,10 +62,12 @@
 	"dependencies": {
 		"@tabler/icons-svelte": "^3.30.0",
 		"clsx": "^2.1.1",
+		"postcss": "^8.5.3",
 		"svelte-cubed": "^0.2.1",
 		"svelte-icons": "^2.1.0",
 		"svelte-inview": "^4.0.4",
 		"svelte-motion": "^0.12.2",
+		"svelte-reveal": "^1.1.0",
 		"tabler": "1.0.0-alpha.8",
 		"tailwind-merge": "^3.0.1",
 		"three": "^0.173.0"

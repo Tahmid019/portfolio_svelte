@@ -4,10 +4,8 @@
 	import Hero from '$lib/components/Hero.svelte';
 	import Por from '$lib/components/Por.svelte';
 	import Projects from '$lib/components/Projects.svelte';
-
 	import Timeline from '$lib/components/Timeline.svelte';
-	import Tools from '$lib/components/Tools.svelte';
-
+	import Skills from '$lib/components/Skills.svelte';
 	import BgGrad from '$lib/components/ui/BgGrad.svelte';
 	
 
@@ -40,7 +38,7 @@
 
 
 	<!-- Tech Stack -->
-	 <Tools />
+	<Skills />
 
 
 	<!-- Contact -->
