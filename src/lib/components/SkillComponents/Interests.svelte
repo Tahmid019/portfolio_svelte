@@ -3,16 +3,28 @@
     import anime_bg from "$lib/assets/onepiece.jpeg";
     import web_bg from "$lib/assets/web.jpeg";
     import ml_bg from "$lib/assets/ml.jpeg";
+    import type { ComponentType } from 'svelte';
 
     import LayoutGrid from "$lib/components/ui/Layout/LayoutGrid.svelte";
-    import SkeletonFour from "$lib/components/InterestComponents/Skeleton.svelte";
-    import SkeletonOne from "$lib/components/InterestComponents/Skeleton.svelte";
-    import SkeletonThree from "$lib/components/InterestComponents/Skeleton.svelte";
-    import SkeletonTwo from "$lib/components/InterestComponents/Skeleton.svelte";
-    let cards = [
+    import Skeleton from "$lib/components/InterestComponents/Skeleton.svelte";
+
+    type Props = {
+      Interest: string;
+      Description: string;
+    };
+
+    type Card = {
+      id: number;
+      content: string | ComponentType;
+      props: Props;
+      class: string;
+      thumbnail: string;
+    };
+
+    let cards: Card[] = [
       {
         id: 1,
-        content: SkeletonOne,
+        content: Skeleton,
         props:{
             Interest: "Web Development",
             Description: "I love to build websites and web applications. I have experience in building websites using HTML, CSS, JavaScript, React, and Svelte."
@@ -23,7 +35,7 @@
       },
       {
         id: 2,
-        content: SkeletonTwo,
+        content: Skeleton,
         props:{
             Interest: "Machine Learning",
             Description: "I have experience in building machine learning models using Python and libraries like TensorFlow, Keras, and Scikit-learn."
@@ -34,7 +46,7 @@
       },
       {
         id: 3,
-        content: SkeletonThree,
+        content: Skeleton,
         props:{
             Interest: "Competetive Programming",
             Description: "Improving my skills and regularly solving problems on platforms like Codeforces and Leetcode."
@@ -45,7 +57,7 @@
       },
       {
         id: 4,
-        content: SkeletonFour,
+        content: Skeleton,
         props:{
             Interest: "Anime & Manga",
             Description: "I love watching anime and reading manga. Some of my favorite anime are Naruto, Attack on Titan, and One Piece. JOJO IS THE BEST !!!"
@@ -57,7 +69,7 @@
     ];
   </script>
   
-  <div class='flex justify-center items-center h-[550px] w-full md:h-[40rem] md:w-full '>
+  <div class='flex justify-center items-center h-[550px] w-full md:h-[40rem] md:w-full'>
     <LayoutGrid {cards} />
   </div>
   

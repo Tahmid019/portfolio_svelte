@@ -4,7 +4,7 @@
     import { Motion, AnimatePresence, AnimateSharedLayout } from "svelte-motion";
   
     type Props = {
-      Interests: string;
+      Interest: string;
       Description: string;
     };
     
@@ -114,7 +114,7 @@
                   height="500"
                   width="500"
                   class={cn(
-                    "object-cover object-top absolute inset-0 h-full w-full transition duration-200"
+                    "object-cover object-top absolute inset-0 h-full w-full  grayscale hover:grayscale-0 hover:scale-105 transition duration-200"
                   )}
                 />
               </Motion>
