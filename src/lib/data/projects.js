@@ -1,58 +1,58 @@
 import BentoSkeleton from '$lib/components/ui/BentoSkeleton.svelte';
 
-import IconArrowWaveRightUp from '$lib/assets/test.svg';
-import IconBoxAlignRightFilled from '$lib/assets/test.svg';
-import IconBoxAlignTopLeft from '$lib/assets/test.svg';
-import IconClipboardCopy from '$lib/assets/test.svg';
-import IconFileBroken from '$lib/assets/test.svg';
-import IconSignature from '$lib/assets/test.svg';
-import IconTableColumn from '$lib/assets/test.svg';
+import IconTick from '$lib/assets/svg/check_circle_outline.svg';
+import IconTickChanges from '$lib/assets/svg/published_with_changes.svg';
 
-import tt from '$lib/assets/tt.jpeg';
+import edusync from '$lib/assets/edusync.png';
+import coffee from '$lib/assets/coffe.jpeg';
+import coding from '$lib/assets/coding.gif';
+import neurathon25 from '$lib/assets/neurathon25.gif';
 
 const items = [
     {
-        title: 'The Dawn of Innovation',
-        description: 'Explore the birth of groundbreaking ideas and inventions.',
+        title: 'EduSync',
+        description: 'Lip-Synchronized Audio-Video Speech-2-Speech Translator, with multilingual support, for educational video translation.',
         header: BentoSkeleton,
-        headerImage: tt,
-        icon: IconClipboardCopy
+        headerImage: edusync,
+        icon: IconTickChanges
     },
     {
-        title: 'The Digital Revolution',
-        description: 'Dive into the transformative power of technology.',
+        title: '8085-Simulator',
+        description: 'An Object-oriented based approach on simulation of the 8085-Microprocessor Programming-architecture.',
         header: BentoSkeleton,
-        icon: IconFileBroken
+        headerImage: coding,
+        icon: IconTickChanges
     },
     {
-        title: 'The Art of Design',
-        description: 'Discover the beauty of thoughtful and functional design.',
+        title: 'Neurathon-2025',
+        description: 'Developed the Webside for the Neurathon-2025. Managing online-Round for the Hackathon and providing Information regarding the upcomming events.',
         header: BentoSkeleton,
-        icon: IconSignature
+        headerImage:neurathon25,
+        icon: IconTick
     },
     {
         title: 'The Power of Communication',
         description: 'Understand the impact of effective communication in our lives.',
         header: BentoSkeleton,
-        icon: IconTableColumn
+        icon: IconTick
     },
     {
         title: 'The Pursuit of Knowledge',
         description: 'Join the quest for understanding and enlightenment.',
         header: BentoSkeleton,
-        icon: IconArrowWaveRightUp
+        icon: IconTick
     },
     {
         title: 'The Joy of Creation',
         description: 'Experience the thrill of bringing ideas to life.',
         header: BentoSkeleton,
-        icon: IconBoxAlignTopLeft
+        icon: IconTick
     },
     {
         title: 'The Spirit of Adventure',
         description: 'Embark on exciting journeys and thrilling discoveries.',
         header: BentoSkeleton,
-        icon: IconBoxAlignRightFilled
+        icon: IconTick
     }
 ];
 

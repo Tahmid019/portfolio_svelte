@@ -3,6 +3,8 @@
 	import Tools from './SkillComponents/Tools.svelte';
 	import Interests from './SkillComponents/Interests.svelte';
 	import Statistics from './SkillComponents/Statistics.svelte';
+	import Subhead from './ui/TextLayouts/Subhead.svelte';
+	import BlurFade from './ui/BlurFade.svelte';
 
 	let activeTab: number = 0;
 
@@ -17,26 +19,24 @@
 	};
 </script>
 
-<section id="skills" class="py-10 ">
-	<header
-		use:reveal
-		class="mt-10 flex w-auto items-center justify-center p-5 text-3xl font-semibold text-white backdrop-blur-sm"
-	>
-		Skills
-	</header>
+<section id="skills" class="">
+	<!-- Heading -->
+	<Subhead text="Skills" />
+
+	<BlurFade>
 
 	<!-- Mobile -->
 	<div use:reveal class="mx-5 sm:hidden">
 		<label for="tabs" class="sr-only">Select a tab</label>
 		<select
 			id="tabs"
-			class="block w-full rounded-lg border-2 border-gray-300 bg-[#000] p-2.5 text-sm text-[#858585] focus:border-gray-200 focus:ring-2 focus:ring-gray-200 focus:ring-opacity-50 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 transition-all duration-300 transform hover:scale-105 focus:scale-105 hover:shadow-lg hover:shadow-[#f7e4791c] focus:shadow-lg focus:shadow-[#f7e4791c]"
+			class="block w-full rounded-lg border-2 border-gray-300 bg-[#000] p-2.5 text-sm text-[#858585] focus:border-gray-200 focus:ring-2 focus:ring-gray-200 focus:ring-opacity-50 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 transition-all duration-300 transform hover:scale-105 focus:scale-105 hover:shadow-lg hover:shadow-[#9b79f71c] focus:shadow-lg focus:shadow-[#7986f71c]"
 			on:change={(e) => handleTabChange((e.target as HTMLSelectElement).selectedIndex ?? 0)}
 		>
 			{#each tabs as tab, index}
 				<option
 					value={index}
-					class="bg-gradient-to-r from-[#000] to-[#1a1a1a] p-2 text-[#858585] transition-all duration-300 hover:bg-[#f7e4791c] hover:text-gray-200 hover:shadow-inner hover:shadow-[#f7e4791c] focus:bg-[#f7e4791c] focus:text-gray-200 focus:shadow-inner focus:shadow-[#f7e4791c]"
+					class="bg-gradient-to-r from-[#000] to-[#1a1a1a] p-2 text-[#858585] transition-all duration-300 hover:bg-[#b879f71c] hover:text-gray-200 hover:shadow-inner hover:shadow-[#b079f71c] focus:bg-[#b479f71c] focus:text-gray-200 focus:shadow-inner focus:shadow-[#9679f71c]"
 				>
 					{tab}
 				</option>
@@ -48,7 +48,7 @@
 	<!-- pc -->
 	<div
 		id="container"
-		class="m-5  flex flex-col gap-6 rounded-xl bg-[#ffffff11] backdrop-blur-lg sm:mx-14 md:mx-20 xl:mx-32"
+		class="flex flex-col gap-6 rounded-xl backdrop-blur-lg sm:mx-14 md:mx-24 xl:mx-28"
 	>
 		<div class="radio-container m-5 ml-0 hidden h-min flex-row justify-center sm:flex">
 			{#each tabs as tab, index}
@@ -74,17 +74,19 @@
 			{/each}
 		</div>
 
-		<!-- Tab Content -->
+		
+		<!-- Content -->
 		<div class="h-auto w-full ">
 			{#if activeTab === 0}
-				<Tools />
+			<Tools />
 			{:else if activeTab === 1}
 				<Interests />
-			{:else if activeTab === 2}
+				{:else if activeTab === 2}
 				<Statistics />
-			{/if}
+				{/if}
+			</div>
 		</div>
-	</div>
+	</BlurFade>
 </section>
 
 <style>
