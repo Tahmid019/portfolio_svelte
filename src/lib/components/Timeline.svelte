@@ -15,7 +15,8 @@
 		{
 			year: '2023',
 			title: 'Idea Initiated',
-			description: 'The idea of a Finance Club was initiated by the 2023 batch as a WhatsApp group.',
+			description:
+				'The idea of a Finance Club was initiated by the 2023 batch as a WhatsApp group.',
 			image: 'https://via.placeholder.com/400x200',
 			date: 'January 2023'
 		},
@@ -54,10 +55,6 @@
 			date: 'February 2025'
 		}
 	];
-
-	
-
-	
 </script>
 
 <section class="relative bg-transparent">

@@ -1,9 +1,7 @@
 <script lang="ts">
-	import Leetcode from "../Stats/Leetcode.svelte";
-
-
+	import Leetcode from '../Stats/Leetcode.svelte';
 </script>
 
 <div class="stat-container">
-    <Leetcode />
+	<Leetcode />
 </div>

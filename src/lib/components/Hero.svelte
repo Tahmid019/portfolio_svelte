@@ -1,13 +1,10 @@
 <script lang="ts">
 	import BlurFade from '$lib/components/ui/BlurFade.svelte';
-    import socialLinks from '$lib/data/socialLinks.js';
-	
+	import socialLinks from '$lib/data/socialLinks.js';
 </script>
 
-<section class="bg-transparent pb-28 pt-20 lg:pb-0 px-6 md:px-12 lg:px-24 xl:px-36">
-	<div
-		class="hero-container mx-auto flex flex-col items-center  lg:flex-row "
-	>
+<section class="bg-transparent px-6 pb-28 pt-20 md:px-12 lg:px-24 lg:pb-0 xl:px-36">
+	<div class="hero-container mx-auto flex flex-col items-center lg:flex-row">
 		<!-- Text Content -->
 		<div class="container mx-auto px-4 pb-12 text-center md:px-6 md:pt-20 lg:pt-32 lg:text-right">
 			<BlurFade delay={0.25}>
@@ -42,7 +39,7 @@
 		</div>
 
 		<!-- Image -->
-		<div class="img w-full max-w-xs sm:max-w-sm md:max-w-md md:pt-14 lg:pt-20 lg:max-w-lg">
+		<div class="img w-full max-w-xs sm:max-w-sm md:max-w-md md:pt-14 lg:max-w-lg lg:pt-20">
 			<BlurFade delay={0.75}>
 				<img
 					src="/cateye.gif"

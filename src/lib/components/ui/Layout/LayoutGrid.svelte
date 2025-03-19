@@ -1,139 +1,133 @@
 <script lang="ts">
-    import { cn } from "$lib/utils.js";
-    import type { ComponentType } from "svelte";
-    import { Motion, AnimatePresence, AnimateSharedLayout } from "svelte-motion";
-  
-    type Props = {
-      Interest: string;
-      Description: string;
-    };
-    
-    type Card = {
-      id: number;
-      content: string | ComponentType;
-      props: Props;
-      class: string;
-      thumbnail: string;
-    };
-    let selected: Card | null = null;
-    let lastSelected: Card | null = null;
-  
-    let handleClick = (card: Card) => {
-      lastSelected = selected;
-      selected = card;
-    };
-  
-    let handleOutsideClick = () => {
-      lastSelected = selected;
-      selected = null;
-    };
-    export let cards: Card[] = [];
-  </script>
-  
-  <div
-    class="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto gap-4 relative"
-  >
-    <AnimateSharedLayout type='crossfade'>
-      {#each cards as card, i}
-        <div class={cn(card.class)}>
-          <Motion layoutId={`card-${card.id}`} let:motion>
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <!-- svelte-ignore a11y-no-static-element-interactions -->
-            <div
-              on:click={() => {
-                handleClick(card);
-              }}
-              class={cn(
-                card.class,
-                "relative overflow-hidden",
-                selected?.id === card.id
-                  ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
-                  : lastSelected?.id === card.id
-                    ? "z-40 bg-white rounded-xl h-full w-full"
-                    : "bg-white rounded-xl h-full w-full"
-              )}
-              use:motion
-            >
-              {#if selected?.id === card.id}
-                <div
-                  class="bg-transparent h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]"
-                >
-                  <Motion
-                    initial={{
-                      opacity: 0,
-                    }}
-                    animate={{
-                      opacity: 0.6,
-                    }}
-                    let:motion
-                  >
-                    <div
-                      use:motion
-                      class="absolute inset-0 h-full w-full  bg-black opacity-100 z-10"
-                    >
-                      <Motion
-                        layoutId={`content-${selected?.id}`}
-                        initial={{
-                          opacity: 0,
-                          y: 100,
-                        }}
-                        animate={{
-                          opacity: 1,
-                          y: 0,
-                        }}
-                        exit={{
-                          opacity: 0,
-                          y: 100,
-                        }}
-                        transition={{
-                          duration: 0.3,
-                          ease: "easeInOut",
-                        }}
-                        let:motion
-                      >
-                        <div use:motion class="relative px-8 pb-4 z-[70] top-8 md:top-36">
-                          {#if typeof selected?.content === "string"}
-                            <p class="text-white text-2xl mt-3 font-bold ">
-                              {selected?.content}
-                            </p>
-                          {:else}
-                            <svelte:component this={selected?.content} {...selected?.props} />
-                          {/if}
-                        </div>
-                      </Motion>
-                    </div>
-                  </Motion>
-                </div>
-                <!-- {:else} -->
-              {/if}
-              <Motion layoutId={`image-${card.id}-image`} let:motion>
-                <img
-                  use:motion
-                  src={card.thumbnail}
-                  alt="thumbnail"
-                  height="500"
-                  width="500"
-                  class={cn(
-                    "object-cover object-top absolute inset-0 h-full w-full  grayscale hover:grayscale-0 hover:scale-105 transition duration-200"
-                  )}
-                />
-              </Motion>
-            </div>
-          </Motion>
-        </div>
-      {/each}
-    </AnimateSharedLayout>
-    <Motion animate={{ opacity: selected?.id ? 0.3 : 0 }} let:motion>
-      <!-- svelte-ignore a11y-click-events-have-key-events -->
-      <!-- svelte-ignore a11y-no-static-element-interactions -->
-      <div
-        use:motion
-        on:click={handleOutsideClick}
-        class={cn(
-          "absolute h-full w-full left-0 top-0 bg-black opacity-0 z-10",
-          selected?.id ? "pointer-events-auto" : "pointer-events-none"
-        )}
-      ></div>
-    </Motion>
-  </div>
-  
+	import { cn } from '$lib/utils.js';
+	import type { ComponentType } from 'svelte';
+	import { Motion, AnimatePresence, AnimateSharedLayout } from 'svelte-motion';
+
+	type Props = {
+		Interest: string;
+		Description: string;
+	};
+
+	type Card = {
+		id: number;
+		content: string | ComponentType;
+		props: Props;
+		class: string;
+		thumbnail: string;
+	};
+	let selected: Card | null = null;
+	let lastSelected: Card | null = null;
+
+	let handleClick = (card: Card) => {
+		lastSelected = selected;
+		selected = card;
+	};
+
+	let handleOutsideClick = () => {
+		lastSelected = selected;
+		selected = null;
+	};
+	export let cards: Card[] = [];
+</script>
+
+<div class="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-4 p-10 md:grid-cols-3">
+	<AnimateSharedLayout type="crossfade">
+		{#each cards as card, i}
+			<div class={cn(card.class)}>
+				<Motion layoutId={`card-${card.id}`} let:motion>
+					<!-- svelte-ignore a11y-click-events-have-key-events -->
+					<!-- svelte-ignore a11y-no-static-element-interactions -->
+					<div
+						on:click={() => {
+							handleClick(card);
+						}}
+						class={cn(
+							card.class,
+							'relative overflow-hidden',
+							selected?.id === card.id
+								? 'absolute inset-0 z-50 m-auto flex h-1/2 w-full cursor-pointer flex-col flex-wrap items-center justify-center rounded-lg md:w-1/2'
+								: lastSelected?.id === card.id
+									? 'z-40 h-full w-full rounded-xl bg-white'
+									: 'h-full w-full rounded-xl bg-white'
+						)}
+						use:motion
+					>
+						{#if selected?.id === card.id}
+							<div
+								class="relative z-[60] flex h-full w-full flex-col justify-end rounded-lg bg-transparent shadow-2xl"
+							>
+								<Motion
+									initial={{
+										opacity: 0
+									}}
+									animate={{
+										opacity: 0.6
+									}}
+									let:motion
+								>
+									<div use:motion class="absolute inset-0 z-10 h-full w-full bg-black opacity-100">
+										<Motion
+											layoutId={`content-${selected?.id}`}
+											initial={{
+												opacity: 0,
+												y: 100
+											}}
+											animate={{
+												opacity: 1,
+												y: 0
+											}}
+											exit={{
+												opacity: 0,
+												y: 100
+											}}
+											transition={{
+												duration: 0.3,
+												ease: 'easeInOut'
+											}}
+											let:motion
+										>
+											<div use:motion class="relative top-8 z-[70] px-8 pb-4 md:top-36">
+												{#if typeof selected?.content === 'string'}
+													<p class="mt-3 text-2xl font-bold text-white">
+														{selected?.content}
+													</p>
+												{:else}
+													<svelte:component this={selected?.content} {...selected?.props} />
+												{/if}
+											</div>
+										</Motion>
+									</div>
+								</Motion>
+							</div>
+							<!-- {:else} -->
+						{/if}
+						<Motion layoutId={`image-${card.id}-image`} let:motion>
+							<img
+								use:motion
+								src={card.thumbnail}
+								alt="thumbnail"
+								height="500"
+								width="500"
+								class={cn(
+									'absolute inset-0 h-full w-full object-cover object-top  grayscale transition duration-200 hover:scale-105 hover:grayscale-0'
+								)}
+							/>
+						</Motion>
+					</div>
+				</Motion>
+			</div>
+		{/each}
+	</AnimateSharedLayout>
+	<Motion animate={{ opacity: selected?.id ? 0.3 : 0 }} let:motion>
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
+		<!-- svelte-ignore a11y-no-static-element-interactions -->
+		<div
+			use:motion
+			on:click={handleOutsideClick}
+			class={cn(
+				'absolute left-0 top-0 z-10 h-full w-full bg-black opacity-0',
+				selected?.id ? 'pointer-events-auto' : 'pointer-events-none'
+			)}
+		></div>
+	</Motion>
+</div>

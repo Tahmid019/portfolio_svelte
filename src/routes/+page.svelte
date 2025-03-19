@@ -7,11 +7,6 @@
 	import Timeline from '$lib/components/Timeline.svelte';
 	import Skills from '$lib/components/Skills.svelte';
 	import BgGrad from '$lib/components/ui/BgGrad.svelte';
-	
-
-
-
-	
 </script>
 
 <main class="bg-transparent">
@@ -27,19 +22,14 @@
 	<Projects />
 
 	<!-- Experience -->
-	
-	
+
 	<!-- Position of Responsibility -->
 	<Por />
 
-	
-
 	<!-- Coding journey -->
-
 
 	<!-- Tech Stack -->
 	<Skills />
-
 
 	<!-- Contact -->
 </main>

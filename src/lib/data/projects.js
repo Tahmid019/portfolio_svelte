@@ -13,57 +13,62 @@ import fin_bg from '$lib/assets/fin_web.gif';
 import gnd_bg from '$lib/assets/aquarium.gif';
 
 const items = [
-    {
-        title: 'EduSync',
-        description: 'Lip-Synchronized Audio-Video Speech-2-Speech Translator, with multilingual support, for educational video translation.',
-        header: BentoSkeleton,
-        headerImage: edusync,
-        icon: IconTickChanges
-    },
-    {
-        title: '8085-Simulator',
-        description: 'An Object-oriented based approach on simulation of the 8085-Microprocessor Programming-architecture.',
-        header: BentoSkeleton,
-        headerImage: coding,
-        icon: IconTickChanges
-    },
-    {
-        title: 'Neurathon-2025',
-        description: 'Developed the Webside for the Neurathon-2025. Managing online-Round for the Hackathon and providing Information regarding the upcomming events.',
-        header: BentoSkeleton,
-        headerImage:neurathon25,
-        icon: IconTick
-    },
-    {
-        title: 'Voice Cloning',
-        description: 'An end-2-end voice cloning web-application focussing on realtime user-given voice feature extraction and audio generation for any given text.',
-        header: BentoSkeleton,
-        headerImage: voice_bg,
-        icon: IconTickChanges
-    },
-    {
-        title: 'Fire Detection',
-        description: 'Drone Based Forest Fire Detection, for rescue missions , navigating and providing safer path for hostages.',
-        header: BentoSkeleton,
-        headerImage: forest_bg,
-        icon: IconTick
-    },
-    {
-        title: 'Finance Club Website',
-        description: 'Collaboration project for developing an official website for Finance Club, NIT SIlchar.',
-        header: BentoSkeleton,
-        headerImage:fin_bg,
-        icon: IconTick
-    },
-    {
-        title: 'Ground Water Level Predictor',
-        description: 'A Time Series ML Model Fed on Ground water and Terrain Data from 2019-2022, to predict ground water level of different areas in Assam.',
-        header: BentoSkeleton,
-        headerImage: gnd_bg,
-        icon: IconTick
-    }
+	{
+		title: 'EduSync',
+		description:
+			'Lip-Synchronized Audio-Video Speech-2-Speech Translator, with multilingual support, for educational video translation.',
+		header: BentoSkeleton,
+		headerImage: edusync,
+		icon: IconTickChanges
+	},
+	{
+		title: '8085-Simulator',
+		description:
+			'An Object-oriented based approach on simulation of the 8085-Microprocessor Programming-architecture.',
+		header: BentoSkeleton,
+		headerImage: coding,
+		icon: IconTickChanges
+	},
+	{
+		title: 'Neurathon-2025',
+		description:
+			'Developed the Webside for the Neurathon-2025. Managing online-Round for the Hackathon and providing Information regarding the upcomming events.',
+		header: BentoSkeleton,
+		headerImage: neurathon25,
+		icon: IconTick
+	},
+	{
+		title: 'Voice Cloning',
+		description:
+			'An end-2-end voice cloning web-application focussing on realtime user-given voice feature extraction and audio generation for any given text.',
+		header: BentoSkeleton,
+		headerImage: voice_bg,
+		icon: IconTickChanges
+	},
+	{
+		title: 'Fire Detection',
+		description:
+			'Drone Based Forest Fire Detection, for rescue missions , navigating and providing safer path for hostages.',
+		header: BentoSkeleton,
+		headerImage: forest_bg,
+		icon: IconTick
+	},
+	{
+		title: 'Finance Club Website',
+		description:
+			'Collaboration project for developing an official website for Finance Club, NIT SIlchar.',
+		header: BentoSkeleton,
+		headerImage: fin_bg,
+		icon: IconTick
+	},
+	{
+		title: 'Ground Water Level Predictor',
+		description:
+			'A Time Series ML Model Fed on Ground water and Terrain Data from 2019-2022, to predict ground water level of different areas in Assam.',
+		header: BentoSkeleton,
+		headerImage: gnd_bg,
+		icon: IconTick
+	}
 ];
-
-
 
 export default items;

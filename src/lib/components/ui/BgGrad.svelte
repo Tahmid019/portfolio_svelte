@@ -1,14 +1,14 @@
 <script lang="ts">
-  import TextHoverShine from "./TextHoverShine.svelte";
+	import TextHoverShine from './TextHoverShine.svelte';
 </script>
 
 <div
 	class="gradient-bg hover-effect flex h-screen w-screen items-center justify-center rounded-lg text-4xl font-bold text-white shadow-lg"
 	role="presentation"
 >
-<div class="flex items-center justify-center">
-  <TextHoverShine text="Updating . . ." />
-</div>
+	<div class="flex items-center justify-center">
+		<TextHoverShine text="Updating . . ." />
+	</div>
 </div>
 
 <style>
