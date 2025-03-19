@@ -27,7 +27,7 @@
 <footer class="relative text-white text-center pt-10">
     <!-- Last Upd -->
     <p class="text-gray-400 text-sm mb-2">
-        Last updated: <span class="font-semibold text-white">19-03-2025</span>
+        Last updated: <span class="font-semibold text-white">{"19-03-2025 (...more features loading)"}</span>
     </p>
 
     <!-- Misc -->
