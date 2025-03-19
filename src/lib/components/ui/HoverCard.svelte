@@ -18,7 +18,7 @@
 	>
 		<!-- Image -->
 		{#if item.image}
-			<img
+			<enhanced:img
 				src={item.image}
 				alt={item.title}
 				class="mb-4 h-48 w-full rounded-lg object-cover transition-all duration-300 group-hover:brightness-110"

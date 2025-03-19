@@ -60,6 +60,7 @@
 		"vitest": "^3.0.0"
 	},
 	"dependencies": {
+		"@sveltejs/enhanced-img": "^0.4.4",
 		"@tabler/icons-svelte": "^3.30.0",
 		"clsx": "^2.1.1",
 		"postcss": "^8.5.3",

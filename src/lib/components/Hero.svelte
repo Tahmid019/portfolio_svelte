@@ -41,7 +41,7 @@
 		<!-- Image -->
 		<div class="img w-full max-w-xs sm:max-w-sm md:max-w-md md:pt-14 lg:max-w-lg lg:pt-20">
 			<BlurFade delay={0.75}>
-				<img
+				<enhanced:img
 					src="/cateye.gif"
 					alt="Tahmid Choudhury"
 					class="h-auto w-full rounded-lg shadow-2xl grayscale transition-all duration-300 hover:grayscale-0"

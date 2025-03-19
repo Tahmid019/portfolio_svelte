@@ -28,14 +28,14 @@
 				>
 					<div slot="header">
 						<!-- <svelte:component this={item.header} /> -->
-						<img
+						<enhanced:img
 							src={item.headerImage}
 							alt={item.title}
 							class="h-32 w-full rounded-lg object-cover grayscale transition-all duration-200 hover:scale-105 hover:grayscale-0"
 						/>
 					</div>
 					<div slot="icon">
-						<img src={item.icon} alt="svg_icons" class="h-4 w-4 text-neutral-500" />
+						<enhanced:img src={item.icon} alt="svg_icons" class="h-4 w-4 text-neutral-500" />
 					</div>
 				</BentoGridItem>
 			{/each}
