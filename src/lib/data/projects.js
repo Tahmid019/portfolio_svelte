@@ -7,6 +7,10 @@ import edusync from '$lib/assets/edusync.png';
 import coffee from '$lib/assets/coffe.jpeg';
 import coding from '$lib/assets/coding.gif';
 import neurathon25 from '$lib/assets/neurathon25.gif';
+import voice_bg from '$lib/assets/opera.gif';
+import forest_bg from '$lib/assets/forest_fire.jpeg';
+import fin_bg from '$lib/assets/fin_web.gif';
+import gnd_bg from '$lib/assets/aquarium.gif';
 
 const items = [
     {
@@ -31,27 +35,31 @@ const items = [
         icon: IconTick
     },
     {
-        title: 'The Power of Communication',
-        description: 'Understand the impact of effective communication in our lives.',
+        title: 'Voice Cloning',
+        description: 'An end-2-end voice cloning web-application focussing on realtime user-given voice feature extraction and audio generation for any given text.',
         header: BentoSkeleton,
+        headerImage: voice_bg,
+        icon: IconTickChanges
+    },
+    {
+        title: 'Fire Detection',
+        description: 'Drone Based Forest Fire Detection, for rescue missions , navigating and providing safer path for hostages.',
+        header: BentoSkeleton,
+        headerImage: forest_bg,
         icon: IconTick
     },
     {
-        title: 'The Pursuit of Knowledge',
-        description: 'Join the quest for understanding and enlightenment.',
+        title: 'Finance Club Website',
+        description: 'Collaboration project for developing an official website for Finance Club, NIT SIlchar.',
         header: BentoSkeleton,
+        headerImage:fin_bg,
         icon: IconTick
     },
     {
-        title: 'The Joy of Creation',
-        description: 'Experience the thrill of bringing ideas to life.',
+        title: 'Ground Water Level Predictor',
+        description: 'A Time Series ML Model Fed on Ground water and Terrain Data from 2019-2022, to predict ground water level of different areas in Assam.',
         header: BentoSkeleton,
-        icon: IconTick
-    },
-    {
-        title: 'The Spirit of Adventure',
-        description: 'Embark on exciting journeys and thrilling discoveries.',
-        header: BentoSkeleton,
+        headerImage: gnd_bg,
         icon: IconTick
     }
 ];

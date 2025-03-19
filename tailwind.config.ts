@@ -18,6 +18,9 @@ const config: Config = {
   content: ['./src/**/*.{html,js,svelte,ts}'], 
   theme: {
     extend: {
+      animation: {
+        grid: "grid 15s linear infinite",
+      },
       colors: {
         "color-1": "hsl(var(--color-1))",
         "color-2": "hsl(var(--color-2))",
@@ -26,6 +29,10 @@ const config: Config = {
         "color-5": "hsl(var(--color-5))",
       },
       keyframes: {
+        grid: {
+          "0%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0)" },
+        },
         "aurora-border": {
           "0%, 100%": { borderRadius: "37% 29% 27% 27% / 28% 25% 41% 37%" },
           "25%": { borderRadius: "47% 29% 39% 49% / 61% 19% 66% 26%" },

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import {reveal} from 'svelte-reveal';
 	import BentoGrid from './ui/BentoGrid.svelte';
 	import BentoGridItem from './ui/BentoGridItem.svelte';
 	
@@ -11,7 +12,12 @@
 <section class="Por-container p-4 md:p-14 lg:p-20  xl:mx-[13%]">
 	
 	<!-- Heading -->
+	<header
+	use:reveal
+	class="flex w-auto items-center justify-center font-semibold text-white backdrop-blur-sm"
+>
 	<Subhead text={"Projects"}/>
+	</header>
 
 	<!-- Projs -->
 	<BlurFade>

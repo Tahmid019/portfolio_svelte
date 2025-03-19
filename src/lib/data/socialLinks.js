@@ -1,6 +1,6 @@
 const socialLinks = [
     {
-        href: 'nkedin.com/in/tahmid019/',
+        href: 'https://linkedin.com/in/tahmid019/',
         label: 'LinkedIn Profile',
         iconClass: 'fab fa-linkedin-in'
     },

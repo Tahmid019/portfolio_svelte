@@ -1,8 +1,10 @@
 <script lang="ts">
+	import {reveal} from 'svelte-reveal';
+
 	import HoverCard from '$lib/components/ui/HoverCard.svelte';
 	import BlurFade from './ui/BlurFade.svelte';
 	import Subhead from './ui/TextLayouts/Subhead.svelte';
-	import WhiteShineText from './ui/WhiteShineText.svelte';
+	// import WhiteShineText from './ui/WhiteShineText.svelte';
 
 	import ml_bg from '$lib/assets/ml.jpeg';
 	import fl_bg from '$lib/assets/flutter.jpeg';
@@ -48,7 +50,14 @@
 
 
 <section class="Por-container p-4 md:p-14 lg:p-20  xl:mx-[13%]">
+	<!-- Heading -->
+	<header
+	use:reveal
+	class="flex w-auto items-center justify-center font-semibold text-white backdrop-blur-sm"
+>
 	<Subhead text={"P.O.R."}/>
+	</header>
+	
 	<BlurFade>
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 		{#each timelineItems as item, index}
