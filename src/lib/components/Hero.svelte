@@ -26,7 +26,7 @@
 				</p>
 			</BlurFade>
 
-			<BlurFade delay={0.3}>
+			<BlurFade delay={0.5}>
 				<div class="flex items-center justify-center gap-4 lg:justify-end">
 					{#each socialLinks as { href, label, iconClass }}
 						<a
@@ -49,7 +49,7 @@
 				<img
 				src={logo1}
 				alt="Tahmid Choudhury"
-				class="h-[300px] w-auto shadow-2xl grayscale transition-all duration-300 hover:grayscale-0"
+				class="h-[300px] w-auto shadow-2xl grayscale transition-all duration-300 hover:grayscale-0 hover:scale-[105%]"
 				/>
 			</BlurFade>
 		</div>
