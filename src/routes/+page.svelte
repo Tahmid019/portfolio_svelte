@@ -43,5 +43,3 @@
 
 	<!-- Contact -->
 </main>
-
-<Footer />
