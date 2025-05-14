@@ -32,7 +32,7 @@
 
     <!-- Misc -->
     <p class="text-gray-400 text-sm mb-2">
-        {"Made with Busy Schedules (I am a sleepyt head 😅)"}
+        {"Made with Busy Schedules (I am a sleepy head 😅)"}
     </p>
 
     <!-- Links -->

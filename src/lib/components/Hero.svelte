@@ -2,7 +2,7 @@
 	import BlurFade from '$lib/components/ui/BlurFade.svelte';
     import socialLinks from '$lib/data/socialLinks.js';
 
-	import cateye from '$lib/assets/cateye.gif';
+	import logo1 from '$lib/assets/svg/logo1-color.svg';
 	
 </script>
 
@@ -11,7 +11,7 @@
 		class="hero-container mx-auto flex flex-col items-center  lg:flex-row "
 	>
 		<!-- Text Content -->
-		<div class="container mx-auto px-4 pb-12 text-center md:px-6 md:pt-20 lg:pt-32 lg:text-right">
+		<div class="container h-[80%] lg:w-[60%] mx-auto px-4 pb-12 text-center md:px-6 md:pt-20 lg:pt-32 lg:text-right">
 			<BlurFade delay={0.25}>
 				<h1
 					class="mb-8 text-4xl font-bold tracking-tighter text-white sm:text-5xl lg:text-6xl xl:text-7xl"
@@ -26,7 +26,7 @@
 				</p>
 			</BlurFade>
 
-			<BlurFade delay={0.75}>
+			<BlurFade delay={0.3}>
 				<div class="flex items-center justify-center gap-4 lg:justify-end">
 					{#each socialLinks as { href, label, iconClass }}
 						<a
@@ -44,15 +44,16 @@
 		</div>
 
 		<!-- Image -->
-		<div class="img w-full max-w-xs sm:max-w-sm md:max-w-md md:pt-14 lg:pt-20 lg:max-w-lg">
+		<div class="h-[20%] lg:w-[40%] flex items-center justify-center">
 			<BlurFade delay={0.75}>
 				<img
-					src={cateye}
-					alt="Tahmid Choudhury"
-					class="h-auto w-full rounded-lg shadow-2xl grayscale transition-all duration-300 hover:grayscale-0"
+				src={logo1}
+				alt="Tahmid Choudhury"
+				class="h-[300px] w-auto shadow-2xl grayscale transition-all duration-300 hover:grayscale-0"
 				/>
 			</BlurFade>
 		</div>
+
 	</div>
 </section>
 

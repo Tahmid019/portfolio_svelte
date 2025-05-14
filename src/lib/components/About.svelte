@@ -1,15 +1,12 @@
 <script lang="ts">
 	import {reveal} from 'svelte-reveal';
 	import { Cube } from './ui/index.js';
-	import WhiteShineText from './ui/WhiteShineText.svelte';
 	import Subhead from './ui/TextLayouts/Subhead.svelte';
 	import Subhead2 from './ui/TextLayouts/Subhead2.svelte';
 	import BlurFade from './ui/BlurFade.svelte';
 	
 	export let title = 'About Me';
-	export let des = {
-		text: 'itaque commodi esse ut minus veniam maiores, veritatis neque asperiores odit voluptate ratione hic quaerat voluptates expedita velit temporibus. Facere distinctio libero facilis est reprehenderit eaque incidunt consectetur veritatis? Sapiente accusantium optio odio tempora placeat! Id recusandae deserunt omnis.'
-	};
+	
 
 </script>
 
