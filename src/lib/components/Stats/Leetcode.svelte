@@ -1,7 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import AuroraText from '../ui/TextLayouts/AuroraText.svelte';
-	import TextHoverShine from '../ui/TextHoverShine.svelte';
 
 	const radius = 60;
 	const circumference = 2 * Math.PI * radius;

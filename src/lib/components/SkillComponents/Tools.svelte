@@ -1,8 +1,6 @@
 <script lang="ts">
 	import TechSTack from '$lib/components/ui/TechSTack.svelte';
-	import WhiteShineText from '$lib/components/ui/WhiteShineText.svelte';
-
-	const proglangs: { name: string; image: string }[] = [
+const proglangs: { name: string; image: string }[] = [
 		{
 			name: 'C',
 			image: 'https://img.shields.io/badge/C-blue?style=for-the-badge&logo=c&logoColor=white'

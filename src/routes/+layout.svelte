@@ -1,6 +1,8 @@
 <script lang="ts">
 	import '../app.css';
-	let { children } = $props();
+	import Footer from '$lib/components/Footer.svelte';
+	let { data, children } = $props();
 </script>
 
 {@render children()}
+<Footer lastUpdated={data.lastUpdated} />

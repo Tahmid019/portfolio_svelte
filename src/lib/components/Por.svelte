@@ -6,9 +6,9 @@
 	import Subhead from './ui/TextLayouts/Subhead.svelte';
 	// import WhiteShineText from './ui/WhiteShineText.svelte';
 
-	import ml_bg from '$lib/assets/ml.jpeg';
-	import fl_bg from '$lib/assets/flutter.jpeg';
-	import fin_bg from '$lib/assets/fin.png';
+	import ml_bg from '$lib/assets/webp/ml.webp';
+	import fl_bg from '$lib/assets/webp/flutter.webp';
+	import fin_bg from '$lib/assets/webp/fin.webp';
 
 	type TimelineItem = {
 		year?: string;

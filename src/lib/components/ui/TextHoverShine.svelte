@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { writable } from 'svelte/store';
 	export let text = '';
-	export let duration = 0;
+	// export let duration = 0;
 
 	let svgRef: any = null;
 	let cursor = writable({ x: 0, y: 0 });

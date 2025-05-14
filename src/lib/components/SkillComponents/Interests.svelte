@@ -1,8 +1,8 @@
 <script lang="ts">
-	import cp_bg from '$lib/assets/cp.jpeg';
-	import anime_bg from '$lib/assets/onepiece.jpeg';
-	import web_bg from '$lib/assets/web.jpeg';
-	import ml_bg from '$lib/assets/ml.jpeg';
+	import cp_bg from '$lib/assets/webp/cp.webp';
+	import anime_bg from '$lib/assets/webp/onepiece.webp';
+	import web_bg from '$lib/assets/webp/web.webp';
+	import ml_bg from '$lib/assets/webp/ml.webp';
 	import type { ComponentType } from 'svelte';
 
 	import LayoutGrid from '$lib/components/ui/Layout/LayoutGrid.svelte';

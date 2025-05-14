@@ -1,7 +1,7 @@
 <script lang="ts">
 	import * as THREE from 'three';
 	import * as SC from 'svelte-cubed';
-	import { OrbitControls } from 'three/examples/jsm/Addons.js';
+	// import { OrbitControls } from 'three/examples/jsm/Addons.js';
 	import { onMount } from 'svelte';
 
 	export let defaultSectionStyel = 'inset-0 -z-10';
@@ -16,7 +16,7 @@
 	let mouseY = 0;
 	let targetRotationX = 0;
 	let targetRotationY = 0;
-	const smoothingFactor = 0.1;
+	// const smoothingFactor = 0.1;
 
 	onMount(() => {
 		const handleMouseMove = (event: MouseEvent) => {

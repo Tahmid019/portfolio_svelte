@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { cn } from '$lib/utils.js';
 	import type { ComponentType } from 'svelte';
-	import { Motion, AnimatePresence, AnimateSharedLayout } from 'svelte-motion';
+	import { Motion, AnimateSharedLayout } from 'svelte-motion';
 
 	type Props = {
 		Interest: string;
@@ -32,7 +32,7 @@
 
 <div class="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-4 p-10 md:grid-cols-3">
 	<AnimateSharedLayout type="crossfade">
-		{#each cards as card, i}
+		{#each cards as card}
 			<div class={cn(card.class)}>
 				<Motion layoutId={`card-${card.id}`} let:motion>
 					<!-- svelte-ignore a11y-click-events-have-key-events -->
