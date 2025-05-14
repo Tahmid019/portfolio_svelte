@@ -5,4 +5,4 @@
 </script>
 
 {@render children()}
-<Footer lastUpdated={data.lastUpdated}/>
+<Footer lastUpdated={data.lastUpdated} />

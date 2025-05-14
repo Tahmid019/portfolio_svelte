@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {reveal} from 'svelte-reveal';
+	import { reveal } from 'svelte-reveal';
 
 	import HoverCard from '$lib/components/ui/HoverCard.svelte';
 	import BlurFade from './ui/BlurFade.svelte';
@@ -48,21 +48,20 @@
 	];
 </script>
 
-
-<section class="Por-container p-4 md:p-14 lg:p-20  xl:mx-[13%]">
+<section class="Por-container p-4 md:p-14 lg:p-20 xl:mx-[13%]">
 	<!-- Heading -->
 	<header
-	use:reveal
-	class="flex w-auto items-center justify-center font-semibold text-white backdrop-blur-sm"
->
-	<Subhead text={"P.O.R."}/>
+		use:reveal
+		class="flex w-auto items-center justify-center font-semibold text-white backdrop-blur-sm"
+	>
+		<Subhead text={'P.O.R.'} />
 	</header>
-	
+
 	<BlurFade>
-	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-		{#each timelineItems as item, index}
-			<HoverCard {item} {index} />
-		{/each}
-	</div>
-</BlurFade>
+		<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+			{#each timelineItems as item, index}
+				<HoverCard {item} {index} />
+			{/each}
+		</div>
+	</BlurFade>
 </section>

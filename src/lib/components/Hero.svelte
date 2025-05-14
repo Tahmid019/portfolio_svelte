@@ -1,17 +1,16 @@
 <script lang="ts">
 	import BlurFade from '$lib/components/ui/BlurFade.svelte';
-    import socialLinks from '$lib/data/socialLinks.js';
+	import socialLinks from '$lib/data/socialLinks.js';
 
 	import logo1 from '$lib/assets/svg/logo1-color.svg';
-	
 </script>
 
-<section class="bg-transparent pb-28 pt-20 lg:pb-0 px-6 md:px-12 lg:px-24 xl:px-36">
-	<div
-		class="hero-container mx-auto flex flex-col items-center  lg:flex-row "
-	>
+<section class="bg-transparent px-6 pb-28 pt-20 md:px-12 lg:px-24 lg:pb-0 xl:px-36">
+	<div class="hero-container mx-auto flex flex-col items-center lg:flex-row">
 		<!-- Text Content -->
-		<div class="container h-[80%] lg:w-[60%] mx-auto px-4 pb-12 text-center md:px-6 md:pt-20 lg:pt-32 lg:text-right">
+		<div
+			class="container mx-auto h-[80%] px-4 pb-12 text-center md:px-6 md:pt-20 lg:w-[60%] lg:pt-32 lg:text-right"
+		>
 			<BlurFade delay={0.25}>
 				<h1
 					class="mb-8 text-4xl font-bold tracking-tighter text-white sm:text-5xl lg:text-6xl xl:text-7xl"
@@ -44,16 +43,15 @@
 		</div>
 
 		<!-- Image -->
-		<div class="h-[20%] lg:w-[40%] flex items-center justify-center">
+		<div class="flex h-[20%] items-center justify-center lg:w-[40%]">
 			<BlurFade delay={0.75}>
 				<img
-				src={logo1}
-				alt="Tahmid Choudhury"
-				class="h-[300px] w-auto shadow-2xl grayscale transition-all duration-300 hover:grayscale-0 hover:scale-[105%]"
+					src={logo1}
+					alt="Tahmid Choudhury"
+					class="h-[300px] w-auto shadow-2xl grayscale transition-all duration-300 hover:scale-[105%] hover:grayscale-0"
 				/>
 			</BlurFade>
 		</div>
-
 	</div>
 </section>
 

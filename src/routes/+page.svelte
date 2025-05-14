@@ -19,19 +19,14 @@
 	<Projects />
 
 	<!-- Experience -->
-	
-	
+
 	<!-- Position of Responsibility -->
 	<Por />
 
-	
-
 	<!-- Coding journey -->
-
 
 	<!-- Tech Stack -->
 	<Skills />
-
 
 	<!-- Contact -->
 </main>
