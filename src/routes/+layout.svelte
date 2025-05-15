@@ -5,13 +5,13 @@
 </script>
 
 <svelte:head>
-	<title>Tahmid Choudhury</title>
-	<meta name="description" content="Developer | Designer | Dreamer. Portfolio of Tahmid Choudhury, student at National University.">
+	<title>Tahmid Choudhury | Portfolio</title>
+	<meta name="Portfolio" content="Developer | Designer | Dreamer. Portfolio of Tahmid Choudhury, student at National University.">
 
 	<!-- Open Graph -->
 	<meta property="og:title" content="Tahmid Choudhury">
 	<meta property="og:description" content="Portfolio of Tahmid Choudhury - Developer, Designer, Dreamer.">
-	<meta property="og:image" content="https://tahmidchoudhury.vercel.app/favicon.png">
+	<meta property="og:image" content="https://tahmidchoudhury.vercel.app/favicon.ico">
 	<meta property="og:url" content="https://tahmidchoudhury.vercel.app">
 	<meta name="twitter:card" content="summary_large_image">
 
