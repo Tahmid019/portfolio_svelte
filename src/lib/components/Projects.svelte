@@ -21,23 +21,25 @@
 	<BlurFade>
 		<BentoGrid class="mx-auto max-w-4xl px-10 md:px-0">
 			{#each items as item, i}
-				<BentoGridItem
-					title={item.title}
-					description={item.description}
-					class={i === 3 || i === 6 ? 'md:col-span-2' : ''}
-				>
-					<div slot="header">
-						<!-- <svelte:component this={item.header} /> -->
-						<img
-							src={item.headerImage}
-							alt={item.title}
-							class="h-32 w-full rounded-lg object-cover grayscale transition-all duration-200 hover:scale-105 hover:grayscale-0"
-						/>
-					</div>
-					<div slot="icon">
-						<img src={item.icon} alt="svg_icons" class="h-4 w-4 text-neutral-500" />
-					</div>
-				</BentoGridItem>
+				<a href={item.link} target="_blank" rel="noopener noreferrer" class="contents">
+					<BentoGridItem
+						title={item.title}
+						description={item.description}
+						class={i === 3 || i === 6 ? 'md:col-span-2' : ''}
+					>
+						<div slot="header">
+							<!-- <svelte:component this={item.header} /> -->
+							<img
+								src={item.headerImage}
+								alt={item.title}
+								class="h-32 w-full rounded-lg object-cover grayscale transition-all duration-200 hover:scale-105 hover:grayscale-0"
+							/>
+						</div>
+						<div slot="icon">
+							<img src={item.icon} alt="svg_icons" class="h-4 w-4 text-neutral-500" />
+						</div>
+					</BentoGridItem>
+				</a>
 			{/each}
 		</BentoGrid>
 	</BlurFade>
