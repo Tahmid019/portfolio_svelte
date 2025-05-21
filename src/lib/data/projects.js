@@ -65,7 +65,7 @@ const items = [
 		header: BentoSkeleton,
 		headerImage: fin_bg,
 		icon: IconTick,
-		link: 'https://github.com/Tahmid019/FinanceClubNits.git'
+		link: 'https://financeclubnits.in/'
 	},
 	{
 		title: 'Ground Water Level Predictor',

@@ -34,13 +34,13 @@
 
 		<!-- Date -->
 		{#if item.date}
-			<p class="mb-2 text-sm text-gray-400 transition-all duration-300 group-hover:text-gray-600">
+			<p class="mb-2 text-sm text-gray-500 transition-all duration-300 group-hover:text-gray-600">
 				{item.date}
 			</p>
 		{/if}
 
 		<!-- Description -->
-		<p class="mb-4 text-gray-300 transition-all duration-300 group-hover:text-gray-700">
+		<p class="mb-4 lg:text-sm text-gray-400 transition-all duration-300 group-hover:text-gray-700">
 			{item.description}
 		</p>
 
