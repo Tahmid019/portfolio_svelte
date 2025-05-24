@@ -48,6 +48,7 @@
 				<img
 					src={logo1}
 					alt="Tahmid Choudhury"
+					loading="lazy"
 					class="h-[300px] w-auto shadow-2xl grayscale transition-all duration-300 hover:scale-[105%] hover:grayscale-0"
 				/>
 			</BlurFade>

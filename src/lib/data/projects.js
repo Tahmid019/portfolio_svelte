@@ -3,7 +3,7 @@ import BentoSkeleton from '$lib/components/ui/BentoSkeleton.svelte';
 import IconTick from '$lib/assets/svg/check_circle_outline.svg';
 import IconTickChanges from '$lib/assets/svg/published_with_changes.svg';
 
-import edusync from '$lib/assets/webp/edusync.webp';
+import edusync from '$lib/assets/webp/lipsync2.webp';
 // import coffee from '$lib/assets/webp/coffe.webp';
 import coding from '$lib/assets/coding.gif';
 import neurathon25 from '$lib/assets/neurathon25.gif';
