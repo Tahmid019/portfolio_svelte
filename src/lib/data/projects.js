@@ -4,6 +4,8 @@ import IconTick from '$lib/assets/svg/check_circle_outline.svg';
 import IconTickChanges from '$lib/assets/svg/published_with_changes.svg';
 
 import edusync from '$lib/assets/webp/lipsync2.webp';
+import imgWebp from '$lib/assets/webp/img2webp.webp';
+import llmsim from '$lib/assets/llmsim2.gif';
 // import coffee from '$lib/assets/webp/coffe.webp';
 import coding from '$lib/assets/coding.gif';
 import neurathon25 from '$lib/assets/neurathon25.gif';
@@ -50,15 +52,33 @@ const items = [
 		link: 'https://github.com/LipSync-Edusync/multispeaker-tts'
 	},
 	{
+		title: 'Image Format Converter',
+		description:
+		'Drone Based Forest Fire Detection, for rescue missions , navigating and providing safer path for hostages.',
+		header: BentoSkeleton,
+		headerImage: imgWebp,
+		icon: IconTick,
+		link: 'https://tc-imageconverter.streamlit.app/'
+	},
+	{
 		title: 'Fire Detection',
 		description:
 			'Drone Based Forest Fire Detection, for rescue missions , navigating and providing safer path for hostages.',
-		header: BentoSkeleton,
-		headerImage: forest_bg,
-		icon: IconTick,
-		link: 'https://github.com/Tahmid019/fire-detection.git'
-	},
-	{
+			header: BentoSkeleton,
+			headerImage: forest_bg,
+			icon: IconTick,
+			link: 'https://github.com/Tahmid019/fire-detection.git'
+		},
+		{
+			title: 'Sentence Similarity',
+			description:
+				'An automated sentence similarity application comparing the Lexical, Embedded and LLM Based Semantic similarity between sentences.',
+			header: BentoSkeleton,
+			headerImage: llmsim,
+			icon: IconTickChanges,
+			link: 'https://llm-sim.streamlit.app/'
+		},
+		{
 		title: 'Finance Club Website',
 		description:
 			'Collaboration project for developing an official website for Finance Club, NIT SIlchar.',
