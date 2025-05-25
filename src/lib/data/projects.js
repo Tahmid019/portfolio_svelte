@@ -13,6 +13,7 @@ import voice_bg from '$lib/assets/opera.gif';
 import forest_bg from '$lib/assets/webp/forest_fire.webp';
 import fin_bg from '$lib/assets/fin_web.gif';
 import gnd_bg from '$lib/assets/aquarium.gif';
+import qnlp_gif from '$lib/assets/qnlp.gif';
 
 const items = [
 	{
@@ -95,6 +96,15 @@ const items = [
 		headerImage: gnd_bg,
 		icon: IconTick,
 		link: 'https://github.com/Tahmid019/ground-Water-Level-Predictor.git'
+	},
+	{
+		title: 'Quantum NLP',
+		description:
+			'Integrating Quantum Computing with Natural Language Processing',
+		header: BentoSkeleton,
+		headerImage: qnlp_gif,
+		icon: IconTick,
+		link: 'http://qnlp.in/'
 	}
 ];
 
