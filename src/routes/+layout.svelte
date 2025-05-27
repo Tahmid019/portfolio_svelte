@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import Footer from '$lib/components/Footer.svelte';
+	import Stars from '$lib/components/ui/TextLayouts/particles/Stars.svelte';
 	let { data, children } = $props();
 </script>
 
@@ -18,6 +19,10 @@
 	<!-- Favicon -->
 	<link rel="icon" href="/favicon.png" />
 </svelte:head>
+
+<div class="fixed inset-0 -z-10 pointer-events-none">
+	<Stars  />
+</div>
 
 {@render children()}
 <Footer lastUpdated={data.lastUpdated} />

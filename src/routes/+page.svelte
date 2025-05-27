@@ -5,6 +5,7 @@
 	import Por from '$lib/components/Por.svelte';
 	import Projects from '$lib/components/Projects.svelte';
 	import Skills from '$lib/components/Skills.svelte';
+	import Stars from '$lib/components/ui/TextLayouts/particles/Stars.svelte';
 </script>
 
 <svelte:head>
@@ -48,4 +49,5 @@
 	<Skills />
 
 	<!-- Contact -->
+	 <!-- <Stars /> -->
 </main>
