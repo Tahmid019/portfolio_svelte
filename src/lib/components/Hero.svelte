@@ -1,6 +1,7 @@
 <script lang="ts">
 	import BlurFade from '$lib/components/ui/BlurFade.svelte';
 	import socialLinks from '$lib/data/socialLinks.js';
+	import { optimize } from '$lib/image';
 
 	import logo1 from '$lib/assets/svg/logo1-color.svg';
 </script>
@@ -46,7 +47,7 @@
 		<div class="flex h-[20%] items-center justify-center lg:w-[40%]">
 			<BlurFade delay={0.75}>
 				<img
-					src={logo1}
+					srcset={optimize(logo1)}
 					alt="Tahmid Choudhury"
 					loading="lazy"
 					class="h-[300px] w-auto shadow-2xl grayscale transition-all duration-300 hover:scale-[105%] hover:grayscale-0"
