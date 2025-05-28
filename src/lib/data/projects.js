@@ -32,7 +32,7 @@ const items = [
 		header: BentoSkeleton,
 		headerImage: coding,
 		icon: IconTickChanges,
-		link: 'https://github.com/Tahmid019/8085_simulator.git'
+		link: 'https://8085emulator.vercel.app/'
 	},
 	{
 		title: 'Neurathon-2025',
