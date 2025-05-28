@@ -2,7 +2,6 @@
 	import { reveal } from 'svelte-reveal';
 	import BentoGrid from './ui/BentoGrid.svelte';
 	import BentoGridItem from './ui/BentoGridItem.svelte';
-	import { optimize } from '$lib/image';
 
 	import items from '$lib/data/projects.js';
 	import Subhead from './ui/TextLayouts/Subhead.svelte';
@@ -31,7 +30,7 @@
 						<div slot="header">
 							<!-- <svelte:component this={item.header} /> -->
 							<img
-								srcset={optimize(item.headerImage)}
+								src={item.headerImage}
 								alt={item.title}
 								class="h-32 w-full rounded-lg object-cover grayscale transition-all duration-200 hover:scale-105 hover:grayscale-0"
 							/>

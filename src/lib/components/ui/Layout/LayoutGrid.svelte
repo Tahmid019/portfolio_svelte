@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { cn } from '$lib/utils.js';
-	import { optimize } from '$lib/image';
 	import type { ComponentType } from 'svelte';
 	import { Motion, AnimateSharedLayout } from 'svelte-motion';
 
@@ -105,7 +104,7 @@
 						<Motion layoutId={`image-${card.id}-image`} let:motion>
 							<img
 								use:motion
-								srcset={optimize(card.thumbnail)}
+								src={card.thumbnail}
 								alt="thumbnail"
 								height="500"
 								width="500"

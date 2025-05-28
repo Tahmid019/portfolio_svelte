@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { optimize } from '$lib/image';
 	type TimelineItem = {
 		year?: string;
 		title: string;
@@ -20,7 +19,7 @@
 		<!-- Image -->
 		{#if item.image}
 			<img
-				srcset={optimize(item.image)}
+				src={item.image}
 				alt={item.title}
 				class="mb-4 h-48 w-full rounded-lg object-cover transition-all duration-300 group-hover:brightness-110"
 			/>
