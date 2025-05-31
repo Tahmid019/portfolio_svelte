@@ -1,3 +1,8 @@
+import { dev } from '$app/environment';
+import { injectAnalytics } from '@vercel/analytics/sveltekit';
+ 
+injectAnalytics({ mode: dev ? 'development' : 'production' });
+
 export async function load() {
 	try {
 		const res = await fetch('https://api.github.com/repos/Tahmid019/portfolio_svelte/commits/main');
