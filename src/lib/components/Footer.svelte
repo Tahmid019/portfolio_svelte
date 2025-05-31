@@ -9,7 +9,7 @@
 	</p>
 
 	<p class="mb-2 text-sm text-gray-400">
-		{'Made with sleep and caffain 🍵'}
+		{'I am a Failure'}
 	</p>
 
 	<p class="text-sm text-gray-400">
