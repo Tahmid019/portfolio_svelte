@@ -9,7 +9,7 @@
 	</p>
 
 	<p class="mb-2 text-sm text-gray-400">
-		{'I Failed because of my own Actions'}
+		{'Live to Fail. Die for Success.'}
 	</p>
 
 	<p class="text-sm text-gray-400">
