@@ -9,7 +9,7 @@
 	</p>
 
 	<p class="mb-2 text-sm text-gray-400">
-		{'I am a Failure'}
+		{'I Failed because of my own Actions'}
 	</p>
 
 	<p class="text-sm text-gray-400">
