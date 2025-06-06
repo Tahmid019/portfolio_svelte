@@ -8,6 +8,7 @@
 	import Stars from '$lib/components/ui/TextLayouts/particles/Stars.svelte';
 </script>
 
+
 <svelte:head>
 	<title>{seo.title}</title>
 	<meta name="description" content={seo.description} />
@@ -24,6 +25,8 @@
 	<meta name="twitter:description" content={seo.description} />
 	<meta name="twitter:image" content={seo.image} />
 	<meta name="twitter:site" content="@tahmid019" />
+
+	<meta name="p:domain_verify" content="f642f6e3ea070b227c4b4de5d7ea890a"/>
 </svelte:head>
 
 <main class="bg-transparent">
