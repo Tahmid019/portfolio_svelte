@@ -14,6 +14,7 @@ import forest_bg from '$lib/assets/webp/forest_fire.webp';
 import fin_bg from '$lib/assets/fin_web.gif';
 import gnd_bg from '$lib/assets/aquarium.gif';
 import qnlp_gif from '$lib/assets/qnlp.gif';
+import eco_gif from '$lib/assets/ecomot1.gif';
 
 const items = [
 	{
@@ -105,6 +106,15 @@ const items = [
 		headerImage: qnlp_gif,
 		icon: IconTick,
 		link: 'http://qnlp.in/'
+	},
+	{
+		title: 'EcoMotion',
+		description:
+			'GreenX Hackathon 2025 Winner - A Multipurpose Visual Environmental Analyst',
+		header: BentoSkeleton,
+		headerImage: eco_gif,
+		icon: IconTick,
+		link: 'https://ecomotionhack.vercel.app/'
 	}
 ];
 
