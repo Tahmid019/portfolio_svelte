@@ -18,6 +18,11 @@ const socialLinks = [
 		href: 'https://www.instagram.com/tahmid786',
 		label: 'Instagram Profile',
 		iconClass: 'fab fa-instagram'
+	},
+	{
+		href: 'https://pin.it/4TBsdzI62',
+		label: 'Pinterest Profile',
+		iconClass: 'fab fa-pinterest'
 	}
 ];
 
