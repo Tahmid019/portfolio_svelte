@@ -5,8 +5,10 @@ import IconTickChanges from '$lib/assets/svg/published_with_changes.svg';
 
 import edusync from '$lib/assets/webp/lipsync2.webp';
 import imgWebp from '$lib/assets/webp/img2webp.webp';
-import llmsim from '$lib/assets/llmsim2.gif';
+import cyfut_webp from '$lib/assets/webp/cyfut.webp';
 // import coffee from '$lib/assets/webp/coffe.webp';
+
+import llmsim from '$lib/assets/llmsim2.gif';
 import coding from '$lib/assets/coding.gif';
 import neurathon25 from '$lib/assets/neurathon25.gif';
 import voice_bg from '$lib/assets/opera.gif';
@@ -15,6 +17,7 @@ import fin_bg from '$lib/assets/fin_web.gif';
 import gnd_bg from '$lib/assets/aquarium.gif';
 import qnlp_gif from '$lib/assets/qnlp.gif';
 import eco_gif from '$lib/assets/ecomot1.gif';
+import fire_gif from '$lib/assets/fire1.gif';
 
 const items = [
 	{
@@ -53,34 +56,52 @@ const items = [
 		icon: IconTickChanges,
 		link: 'https://github.com/LipSync-Edusync/multispeaker-tts'
 	},
-	{
-		title: 'Image Format Converter',
-		description:
-		'Drone Based Forest Fire Detection, for rescue missions , navigating and providing safer path for hostages.',
-		header: BentoSkeleton,
-		headerImage: imgWebp,
-		icon: IconTick,
-		link: 'https://tc-imageconverter.streamlit.app/'
-	},
+	// {
+	// 	title: 'Image Format Converter',
+	// 	description:
+	// 	'Drone Based Forest Fire Detection, for rescue missions , navigating and providing safer path for hostages.',
+	// 	header: BentoSkeleton,
+	// 	headerImage: imgWebp,
+	// 	icon: IconTick,
+	// 	link: 'https://tc-imageconverter.streamlit.app/'
+	// },
 	{
 		title: 'Fire Detection',
 		description:
 			'Drone Based Forest Fire Detection, for rescue missions , navigating and providing safer path for hostages.',
 			header: BentoSkeleton,
-			headerImage: forest_bg,
+			headerImage: fire_gif,
 			icon: IconTick,
 			link: 'https://github.com/Tahmid019/fire-detection.git'
-		},
-		{
-			title: 'Sentence Similarity',
-			description:
-				'An automated sentence similarity application comparing the Lexical, Embedded and LLM Based Semantic similarity between sentences.',
-			header: BentoSkeleton,
-			headerImage: llmsim,
-			icon: IconTickChanges,
-			link: 'https://llm-sim.streamlit.app/'
-		},
-		{
+	},
+	{
+		title: 'Sentence Similarity',
+		description:
+			'An automated sentence similarity application comparing the Lexical, Embedded and LLM Based Semantic similarity between sentences.',
+		header: BentoSkeleton,
+		headerImage: llmsim,
+		icon: IconTickChanges,
+		link: 'https://llm-sim.streamlit.app/'
+	},
+	{
+		title: 'EcoMotion',
+		description:
+			'GreenX Hackathon 2025 Winner - EcoMotion: Where AI meets Vision to tell the climate story written in every leaf.',
+		header: BentoSkeleton,
+		headerImage: eco_gif,
+		icon: IconTick,
+		link: 'https://ecomotionhack.vercel.app/'
+	},
+	{
+		title: 'PRB',
+		description:
+			'Pause Reflect Breath — Helping you reflect on your mental wellness with calm and clarity.',
+		header: BentoSkeleton,
+		headerImage: cyfut_webp,
+		icon: IconTick,
+		link: 'https://suicide-prevention-app.vercel.app/'
+	},
+	{
 		title: 'Finance Club Website',
 		description:
 			'Collaboration project for developing an official website for Finance Club, NIT SIlchar.',
@@ -107,15 +128,6 @@ const items = [
 		icon: IconTick,
 		link: 'http://qnlp.in/'
 	},
-	{
-		title: 'EcoMotion',
-		description:
-			'GreenX Hackathon 2025 Winner - A Multipurpose Visual Environmental Analyst',
-		header: BentoSkeleton,
-		headerImage: eco_gif,
-		icon: IconTick,
-		link: 'https://ecomotionhack.vercel.app/'
-	}
 ];
 
 export default items;
