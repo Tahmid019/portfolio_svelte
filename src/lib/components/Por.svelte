@@ -2,6 +2,7 @@
 	import { reveal } from 'svelte-reveal';
 
 	import HoverCard from '$lib/components/ui/HoverCard.svelte';
+	import HoverCard2 from '$lib/components/ui/HoverCard2.svelte';
 	import BlurFade from './ui/BlurFade.svelte';
 	import Subhead from './ui/TextLayouts/Subhead.svelte';
 	// import WhiteShineText from './ui/WhiteShineText.svelte';
@@ -17,6 +18,7 @@
 		deploymentLink?: string;
 		githubLink?: string;
 		link?: string;
+		timeline?: any;
 	};
 
 	const timelineItems: TimelineItem[] = pors;
@@ -32,11 +34,27 @@
 	</header>
 
 	<BlurFade>
-		<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+		<div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 			{#each timelineItems as item, index}
-				<a href={item.link} target="_blank" rel="noopener noreferrer" class="contents">
-					<HoverCard {item} {index} />
-				</a>
+				{#if index === 0}
+					<a
+						href={item.link}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="col-span-1 sm:col-span-2 lg:col-span-3"
+					>
+						<HoverCard2 {item} {index} />
+					</a>
+				{:else}
+					<a
+						href={item.link}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="contents"
+					>
+						<HoverCard {item} {index} />
+					</a>
+				{/if}
 			{/each}
 		</div>
 	</BlurFade>
