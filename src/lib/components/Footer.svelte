@@ -14,7 +14,7 @@
 
 	<p class="text-sm text-gray-400">
 		<a href="https://linkedin.com/in/tahmid019" class="hover:underline">Linkedin</a> |
-		<a href="/" class="hover:underline">Email</a> |
+		<a href="mailto:tahmidchoudhury.dev@gmail.com" class="hover:underline">Email</a> |
 		<a href="/" class="hover:underline">Contact</a>
 	</p>
 
