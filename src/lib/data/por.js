@@ -12,7 +12,7 @@ import neura1 from '$lib/assets/neurathon25.gif';
 export const pors = [
   {
     year: '2024',
-    title: 'ML Team',
+    title: 'ML Team - Executive Member',
     description:
       'Joined in 2024, as the Machine Learning Team Member of ML Club NIT Silchar. Contributed in project based in Natural Language Processing and Speech‑2‑Speech research. Organized the Orientation, Club Classes and Neurathon‑2025.',
     image: ml_bg,

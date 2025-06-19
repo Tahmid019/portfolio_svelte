@@ -13,9 +13,9 @@
 	export let index: number;
 </script>
 
-<div class="w-full px-4 {index % 2 === 0 ? 'md:order-1' : 'md:order-2'}">
+<div class="w-full md:px-2 lg:px-4 {index % 2 === 0 ? 'md:order-1' : 'md:order-2'}">
 	<div
-		class="rounded-lg border border-slate-800 bg-slate-900/35 p-6 shadow-lg backdrop-blur-md transition-all duration-300 hover:scale-105  hover:shadow-xl"
+		class="rounded-lg border border-slate-800 bg-slate-900/35 p-3 md:p-6 shadow-lg backdrop-blur-md transition-all duration-300 hover:scale-105  hover:shadow-xl"
 	>
 		<!-- Image -->
 		{#if item.image}
@@ -28,7 +28,7 @@
 
 		<!-- Title -->
 		<h3
-			class="mb-2 text-2xl font-bold text-white transition-all duration-300 group-hover:text-gray-900"
+			class="mb-2 text-lg md:text-xl lg:text-2xl font-bold text-white transition-all duration-300 group-hover:text-gray-900"
 		>
 			{item.title}
 		</h3>
@@ -46,13 +46,13 @@
 		</p>
 
         <!-- Timeline -->
-        <div class="w-full px-4">
+        <div class="w-full md:px-2 lg:px-4">
            
-            <div class="relative grid grid-cols-3 md:flex-row">
+            <div class="relative grid grid-rows md:grid-cols-3">
 
                 {#each item.timeline as entry, i}
                 <div class="group mb-8 h-fit flex items-start md:items-center md:mb-0 md:flex-1
-                            md:even:flex-col md:odd:flex-col-reverse "
+                            md:even:flex-col md:odd:flex-col-reverse text-sm md:text-md lg:text-lg xl:text-xl"
                     class:md:ml-8={i > 0}>
 
                     <!-- Content -->
