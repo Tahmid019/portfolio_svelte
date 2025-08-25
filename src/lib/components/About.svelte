@@ -22,37 +22,34 @@
 						<Subhead text={title} />
 					</header>
 
-					<!-- Description -->
-					<p class="text-justify text-base leading-relaxed text-white opacity-90">
-						Hello! I am a passionate and driven student currently pursuing my studies at
-						<b> National Institute of Technology (NIT) Silchar</b>. I am deeply interested in
-						Machine Learning, Software Development, and AI-driven solutions.
+					<p class="text-justify text-lg leading-relaxed text-white/90 tracking-wide font-light">
+					Hello! I am a passionate and driven student at 
+					<span class="font-semibold text-white">National Institute of Technology (NIT) Silchar</span>.  
+					My interests lie in <span class="font-medium text-indigo-200">Machine Learning</span>, 
+					<span class="font-medium text-indigo-200">Software Development</span>, 
+					and building impactful <span class="font-medium text-indigo-200">AI-driven solutions</span>.
 					</p>
 
-					<!-- Current st -->
+					<!-- Current Status -->
 					<Subhead2 text={'Current Status'} />
-					<p class="text-justify text-base leading-relaxed text-white opacity-90">
-						<b>College:</b> NIT Silchar <br />
-						<b>CGPA:</b> <i>9.43</i> <br />
-						<b>Year:</b> <i>2nd Year, B.Tech, Computer Science</i>
+					<div class="bg-white/5 backdrop-blur-sm rounded-xl p-5 mt-3 shadow-lg border border-white/10">
+					<p class="text-base leading-relaxed text-white/85 font-light">
+						<span class="font-semibold text-white">College:</span> NIT Silchar <br />
+						<span class="font-semibold text-white">CGPA:</span> <i class="text-indigo-200">9.4</i> <br />
+						<span class="font-semibold text-white">Year:</span> <i class="text-indigo-200">3rd Year, B.Tech in Computer Science</i>
 					</p>
+					</div>
 
-					<!-- Edu -->
+					<!-- Education -->
 					<Subhead2 text={'Education'} />
-					<p class="text-justify text-base leading-relaxed text-white opacity-90">
-						<b>Higher Secondary:</b> <i>Govt. V.M. H.S. School</i> <br />
-						<b>Primary Schooling:</b> <i>Spring Valley Central School</i>
+					<div class="bg-white/5 backdrop-blur-sm rounded-xl p-5 mt-3 shadow-lg border border-white/10">
+					<p class="text-base leading-relaxed text-white/85 font-light">
+						<span class="font-semibold text-white">Higher Secondary:</span> <i class="text-indigo-200">Govt. V.M. H.S. School</i> <br />
+						<span class="font-semibold text-white">Primary Schooling:</span> <i class="text-indigo-200">Spring Valley Central School</i>
 					</p>
+					</div>
 
-					<!-- Achievement -->
-					<!-- <Subhead2 text={"Achievements"} />
-		<ul class="list-disc pl-5 text-justify text-base leading-relaxed text-white opacity-90">
-			<li>Selected for IEEE internship on <b>Intelligent Speech-to-Speech Translation</b></li>
-			<li>Participated in <b>Smart India Hackathon 2024</b>, working on groundwater level prediction</li>
-			<li>Member of <b>Machine Learning Club, NIT Silchar</b></li>
-			<li>Developed AI-based solutions for job matchmaking and environmental monitoring</li>
-			<li>Participated in multiple hackathons, including fraud detection challenges</li>
-		</ul> -->
+
 				</div>
 			</div>
 
