@@ -156,23 +156,24 @@ const proglangs: { name: string; image: string }[] = [
 	];
 </script>
 
-<div class="Por-container scale-[0.95] px-4 md:px-14 lg:scale-[1] lg:px-20">
+<div class="Por-container scale-[0.95] px-4 md:px-14 lg:scale-100 lg:px-20">
 	<!-- Programming Languages -->
-	<div class="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-8">
+	<div class="rounded-2xl bg-white/5 backdrop-blur-md p-6 shadow-lg border border-white/10 transition-transform duration-300 hover:scale-[1.02]">
 		<TechSTack title={'Programming Languages'} badges={proglangs} />
 	</div>
 
-	<div class="my-4 h-px w-full bg-gray-400/25"></div>
+	<div class="my-6 h-px w-full bg-gradient-to-r from-transparent via-gray-500/20 to-transparent"></div>
 
 	<!-- Frameworks -->
-	<div class="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-8">
+	<div class="rounded-2xl bg-white/5 backdrop-blur-md p-6 shadow-lg border border-white/10 transition-transform duration-300 hover:scale-[1.02]">
 		<TechSTack title={'Frameworks'} badges={frameworks} />
 	</div>
 
-	<div class="my-4 h-px w-full bg-gray-400/25"></div>
+	<div class="my-6 h-px w-full bg-gradient-to-r from-transparent via-gray-500/20 to-transparent"></div>
 
 	<!-- Tools & Platforms -->
-	<div class="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-8">
+	<div class="rounded-2xl bg-white/5 backdrop-blur-md p-6 shadow-lg border border-white/10 transition-transform duration-300 hover:scale-[1.02]">
 		<TechSTack title={'Tools & Platforms'} badges={weapons} />
 	</div>
 </div>
+

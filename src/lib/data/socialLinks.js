@@ -10,9 +10,14 @@ const socialLinks = [
 		iconClass: 'fab fa-github'
 	},
 	{
-		href: 'https://youtube.com/@tahmidchoudhury8946?si=s2uStHaWwJod9UV7',
+		href: 'https://www.youtube.com/@tahmidchoudhury019',
 		label: 'YouTube Channel',
 		iconClass: 'fab fa-youtube'
+	},
+	{
+		href: 'https://www.youtube.com/@greatTAHMID',
+		label: 'Gaming Channel',
+		iconClass: 'fas fa-gamepad'
 	},
 	{
 		href: 'https://www.instagram.com/tahmid786',
